@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Netflix Việt Nam - Xem chương trình trực tuyến</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="HtmlPage2.css" rel="stylesheet" />
+    <style>
+        .phanDau {
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Images/Br1.jpg');
+            background-size: 100%;
+            width: 100%;
+            height: 788px;
+        }
+
+            .phanDau img {
+                width: 166px;
+                margin-top: 0px;
+                margin-left: 26px;
+            }
+        .navbar-right {
+            float: right !important;
+            margin-right: 0px;
+        }
+        .dangNhap {
+            margin-top: 43px;
+            width: 114px;
+            margin-right: 72px;
+            font-size: 16px;
+            height: 35px;
+            border: none;
+            background-color: #e50914;
+        }
+        .chuMauTrang {
+            color: white;
+            text-align: center;
+        }
+
+        .clearFix {
+            clear: both;
+        }
+
+        .noiDung {
+            margin-top: 165px;
+            padding-left: 419px;
+            padding-right: 419px;
+            display: block;
+        }
+
+        .chuTieuDe {
+            font-size: 51px;
+            font-weight: 600;
+            text-align: inherit;
+            width: 554px;
+        }
+
+        .noiDung h2 {
+            font-size: 26px;
+            margin-top: 15px;
+            width: 567px;
+            padding-left: 97px;
+        }
+
+        .A {
+            margin-top: 35px;
+            font-size: 21px;
+            width: 883px;
+            margin-left: -90px;
+        }
+
+        .nutNhapE {
+            height: 67px;
+            width: 443px;
+        }
+
+        .nutBatDau {
+            height: 67px;
+            width: 206px;
+            font-size: 32px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+        }
+
+        .chU {
+            display: block;
+            color: white;
+            width: 300px;
+        }
+
+        .hienThi {
+            float: right;
+            display: block;
+            width: 723px;
+            height: 100px
+        }
+
+            .hienThi img {
+                width: 525px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .hienThi video {
+                position: absolute;
+                margin-top: -311px;
+                margin-left: 69px;
+                width: 382px;
+                height: 214px;
+            }
+
+        .phanTrang {
+            display: block;
+            width: 100%;
+            height: 7px;
+            background-color: #333;
+        }
+
+        .list-group {
+            float: left;
+            padding-left: 0;
+            width: 179px;
+        }
+
+        .list-group-item {
+            border: none;
+            width: 100px;
+            background-color: black;
+        }
+
+        .chuM {
+            text-align: inherit;
+            width: 600px;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        .vung1 {
+            padding-top: 100px;
+            padding-left: 194px;
+        }
+
+        .vung2 {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .noiDungChu {
+            margin-left: -23px;
+            font-size: 56px;
+            width: 732px;
+            font-weight: 600;
+            margin-top: -8px;
+        }
+
+        .phanTrang1 {
+            display: block;
+            width: 100%;
+            height: 7px;
+            background-color: #333;
+            margin-top: 96px;
+        }
+
+        .coGai {
+            position: absolute;
+            width: 485px;
+        }
+
+        .khungD {
+            margin-top: 239px;
+            margin-left: 79px;
+            position: absolute;
+            z-index: 1;
+            border: 2px solid;
+            background-color: black;
+            width: 341px;
+            height: 100px;
+            border-radius: 15px;
+            display: flex;
+        }
+
+        .hinhKhungD {
+            width: 60px;
+            margin-top: 5px;
+            margin-left: 7px;
+            margin-right: -39px;
+        }
+
+        .videoKhungD {
+            width: 51px;
+        }
+
+        .daynoiDung3 {
+            margin-top: 10px;
+            margin-left: -38px;
+        }
+
+        .chU3 {
+            margin-top: 132px;
+        }
+
+        .hienThi3 {
+            padding-top: 25px;
+            padding-left: 114px;
+        }
+
+        .phanTrang3 {
+            display: block;
+            width: 100%;
+            margin-top: 110px;
+            height: 7px;
+            background-color: #333;
+        }
+
+        .vung4 {
+            padding-top: 139px;
+            padding-left: 217px;
+        }
+
+        .chuM4 {
+            text-align: inherit;
+            width: 571px;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        .viDeo4 {
+            position: absolute;
+            margin-top: -380px;
+            margin-left: 105px;
+            width: 330px;
+            height: 214px;
+        }
+
+        .hienThi4 img {
+            width: 547px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .phanTrang4 {
+            display: block;
+            width: 100%;
+            margin-top: 76px;
+            height: 7px;
+            background-color: #333;
+        }
+
+        .chuM4 {
+            text-align: inherit;
+            width: 565px;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        .vung5 {
+            padding-left: 62px;
+            padding-top: 61px;
+        }
+
+        .chuTieuDe {
+            color: white;
+            text-align: inherit;
+            font-size: 51px;
+            font-weight: 600;
+            width: 554px;
+        }
+
+        .chuMauTrang1 {
+            color: white;
+            font-size: 51px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .canGiua1 {
+            margin: 0 auto;
+        }
+
+        .panel-group {
+            margin-bottom: 20px;
+            width: 797px;
+            margin: 0 auto;
+            margin-top: 55px;
+        }
+
+        .panel-title {
+            height: 52px;
+            padding-top: 12px;
+            font-weight: 400;
+            font-size: 25px;
+            padding-left: 13px;
+        }
+
+        .panel-default {
+            color: white;
+            background-color: #303030;
+            border: none;
+            font-weight: 400;
+            font-size: 25px;
+            padding-left: 26px;
+            padding-right: 44px;
+        }
+
+            .panel-default > .panel-heading {
+                color: white;
+                background-color: #303030;
+                border: none;
+            }
+
+        .panel-group a {
+            text-decoration: none;
+        }
+
+        .chuMauTrang5 {
+            margin-top: 72px;
+            color: white;
+            font-size: 51px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .chuPK {
+            font-weight: 400;
+            font-size: 25px;
+            padding-left: 26px;
+            padding-right: 44px;
+        }
+
+        .panel-default > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: black;
+        }
+
+        .A1 {
+            margin-top: 68px;
+            font-size: 19px;
+            width: 883px;
+            margin-left: 313px;
+            margin-bottom: 23px;
+        }
+
+        .nutNhapE1 {
+            height: 67px;
+            width: 443px;
+            margin-left: 425px;
+        }
+
+        .phanTrang5 {
+            display: block;
+            width: 100%;
+            height: 7px;
+            margin-top: 85px;
+            background-color: #333;
+        }
+
+        .phanKet {
+            display: block;
+        }
+
+        .text1 {
+            margin: 0 auto;
+            display: block;
+            width: 400px;
+            height: 300px;
+            color: white;
+            background-color: aqua;
+        }
+
+        .bottom ul {
+            list-style: none;
+        }
+
+        .bottom a {
+            color: rgb(117, 117, 117);
+        }
+
+        .btm_ul {
+            display: inline-block;
+            float: left;
+        }
+
+        .bottom {
+            margin-top: 54px;
+            height: 315px;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding-bottom: 12px;
+            padding: 14px 266px;
+        }
+
+        .btm_ul li {
+            margin: 10px 45px 10px 0px;
+            font-size: 13px;
+        }
+
+        .phanCuoi1 {
+            display: inline-block;
+        }
+
+        .ha {
+            position: absolute;
+            margin-top: 126px;
+            margin-left: 36px;
+        }
+    </style>
+</head>
+<body style="background-color: black">
+    <div class="phanDau">
+        <div class="thanhTren">
+            <nav class="navbar navbar-brand">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <img src="Images/logo.png" alt="Alternate Text" />
+                    </div>
+                </div>
+            </nav>
+            <div class="nav navbar-nav navbar-right">
+                <button type="button" class="btn btn-danger dangNhap"><a href="Sign.html" style="text-decoration:none; color:white">Đăng nhập</a></button>
+            </div>
+        </div>
+        <div class="clearFix"></div>
+        <!--Nội dung phần đầu-->
+        <div class="noiDung ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h1 class="chuMauTrang noiDungChu">Chương trình truyền hình, phim không giới hạn và nhiều nội dung khác.</h1>
+                        <h2 class="chuMauTrang">Xem ở mọi nơi. Hủy bất kỳ lúc nào.</h2>
+                        <div class="cleaFix"></div>
+                        <h3 class="chuMauTrang A">Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</h3>
+                    </div>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class=" nutNhapE" placeholder="Địa chỉ email" name="search">
+                            <div class="input-group-btn ">
+                                <button class="btn btn-default nutBatDau">BẮT ĐẦU &gt;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cleaFix"></div>
+    <div class="phanTrang"></div>
+    <!--Nội dung phần 2-->
+    <div class="noiDung2" style="margin: 0 auto">
+        <div class="row">
+            <div class="container">
+
+            </div>
+            <div class="col-md-6 vung1">
+                <div class="chU">
+                    <h1 class="chuTieuDe">Thưởng thức trên TV của bạn.</h1>
+                    <h2 class="chuM">
+                        Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu
+                        phát Blu-ray và nhiều thiết bị khác.
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-6 vung2">
+                <div class="hienThi">
+                    <img src="Images/tv.png" alt="Alternate Text" />
+                    <div class="viDeo">
+                        <video autoplay>
+                            <source src="Videos/TV.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phanTrang1"></div>
+    </div>
+    <div class="clearFix"></div>
+    <!--Nội dung phần 3-->
+    <div class="noiDung3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hienThi3">
+                        <img class="coGai" src="Images/coGai.jpg" alt="Alternate Text" />
+                        <div class="khungD">
+                            <div>
+                                <img class="hinhKhungD" src="Images/ds.png" alt="Alternate Text" />
+                            </div>
+                            <div class="giuKhungD">
+                                <ul style="list-style: none;list-style: none;padding-left: 57px;padding-top: 25px">
+                                    <li><p style="color: white;margin-bottom: -12px">Cậu bé mất tích</p></li>
+                                    <li><p style="color: #0071eb;margin-top: 9px">Đang tải xuống...</p></li>
+                                </ul>
+                            </div>
+                            <div class="gif" style="margin: 21px 10px 10px 76px">
+                                <img class="videoKhungD" src="Videos/gifD.gif" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="chU3" style="color: white">
+                        <h1 class="chuTieuDe">Tải xuống nội dung để xem ngoại tuyến.</h1>
+                        <h2 class="chuM">Lưu những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phanTrang3"></div>
+    </div>
+    <div class="clearFix"></div>
+    <!--Nội dung 4-->
+    <div class="noiDung4">
+        <div class="row">
+            <div class="container">
+
+            </div>
+            <div class="col-md-6 vung4">
+                <div class="chU">
+                    <h1 class="chuTieuDe">Xem ở mọi nơi.</h1>
+                    <h2 class="chuM4">
+                        Phát trực tuyến không giới hạn phim và chương trình truyền hình
+                        trên điện thoại, máy tính bảng, máy tính xách tay và TV mà không phải trả thêm phí.
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-6 vung5">
+                <div class="hienThi4">
+                    <img src="Images/pc.png" alt="Alternate Text" />
+                    <div>
+                        <video class="viDeo4" autoplay>
+                            <source src="Videos/video2.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phanTrang4"></div>
+    </div>
+    <div class="clearFix"></div>
+    <!--Phần 5-->
+    <div class="cauHoiTG canGiua1">
+        <h1 class="chuMauTrang5">Câu hỏi thường gặp</h1>
+        <!--D1-->
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Netflix là gì?</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body chuPK">
+                        <p>
+                            Netflix là dịch vụ phát trực tuyến mang đến
+                            đa dạng các loại chương trình truyền hình, phim, anime, phim tài
+                            liệu đoạt giải thưởng và nhiều nội dung khác trên hàng nghìn
+                            thiết bị có kết nối Internet.
+                        </p><br />
+                        <p>
+                            Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn
+                            muốn mà không gặp phải một quảng cáo nào – tất cả chỉ với một mức giá thấp hàng tháng.
+                            Luôn có những nội dung mới để bạn khám phá và những chương trình truyền hình,
+                            phim mới được bổ sung mỗi tuần!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--D2-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            Tôi
+                            phải trả bao nhiêu tiền để xem Netlix?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Xem Netflix trên điện thoại thông minh, máy tính bảng,
+                            TV thông minh, máy tính xách tay hoặc thiết bị phát trực tuyến,
+                            chỉ với một khoản phí cố định hàng tháng. Các gói dịch vụ với mức giá
+                            từ 180.000 ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí, không hợp đồng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--D3-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Tôi có thể xem ở đâu?</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Xem mọi lúc, mọi nơi và không bị giới hạn số lượng thiết bị.
+                            Đăng nhập bằng tài khoản Netflix của bạn để xem ngay trên trang web
+                            netflix.com từ máy tính cá nhân, hoặc trên bất kỳ thiết bị nào có kết nối Internet
+                            và có cài đặt ứng dụng Netflix, bao gồm TV thông minh, điện thoại
+                            thông minh, máy tính bảng, thiết bị phát đa phương tiện trực tuyến và máy chơi game.
+                        </p><br />
+                        <p>
+                            Bạn cũng có thể tải xuống các chương trình
+                            yêu thích bằng ứng dụng trên iOS, Android hoặc Windows 10. Sử dụng các tệp tải
+                            xuống để xem trong khi di chuyển và khi không có kết nối Internet.
+                            Mang Netflix theo bạn đến mọi nơi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--D4-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Làm thế nào để hủy?</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Netflix rất linh hoạt. Không có hợp đồng phiền toái,
+                            không ràng buộc. Bạn có thể dễ dàng hủy tài khoản trực tuyến chỉ trong hai cú nhấp chuột.
+                            Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng tài khoản bất cứ lúc nào.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--D5-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Tôi có thể xem gì trên Netlix?</a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Netflix rất linh hoạt. Không có hợp đồng phiền toái,
+                            không ràng buộc. Bạn có thể dễ dàng hủy tài khoản trực tuyến chỉ trong hai cú nhấp chuột.
+                            Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng tài khoản bất cứ lúc nào.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--phần chữ-->
+        <div class="chuPKC" style="margin: 0 auto">
+            <h3 class="chuMauTrang A1">Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</h3>
+            <div class="input-group">
+                <input class="nutNhapE1 canhGiua" type="text" class="form-control" placeholder="Địa chỉ email" name="Đăng kí">
+                <button type="button" class="btn btn-danger nutBatDau" style="margin-right:425px">BẮT ĐẦU &gt;</button>
+            </div>
+        </div>
+    </div>
+    <div class="clearFix"></div>
+    <div class="phanTrang5"></div>
+    <div class="phanCuoi">
+        <div class="bottom" style="background-color: black">
+            <ul>
+                <li><a href="#" style="font-size: 1em">Bạn có câu hỏi? Liên hệ với chúng tôi.</a></li>
+            </ul>
+            <!--btm1-->
+            <ul class="btm_ul" id="1">
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Quan hệ với nhà đầu tư</a></li>
+                <li><a href="#">Quyền riêng tư</a></li>
+                <li><a href="#">Kiểm tra tốc độ</a></li>
+            </ul>
+
+            <!--btm2-->
+            <ul class="btm_ul" id="2">
+                <li><a href="#">Trung tâm trợ giúp</a></li>
+                <li><a href="#">Việc làm</a></li>
+                <li><a href="#">Tùy chọn cookie</a></li>
+                <li><a href="#">Thông báo pháp lý</a></li>
+            </ul>
+            <!--btm3-->
+            <ul class="btm_ul" id="2">
+                <li><a href="#">Tài khoản</a></li>
+                <li><a href="#">Các cách xem</a></li>
+                <li><a href="#">Thông tin doanh nghiệpư</a></li>
+                <li><a href="ListofProducts.html">Tác phẩm của Netflix</a></li>
+            </ul>
+            <!--btm4-->
+            <ul class="btm_ul" id="2">
+                <li><a href="#">Trung tâm đa phương tiện</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="Contact.html">Liên hệ với chúng tôi</a></li>
+            </ul>
+            <div class="dropdown ha">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Tiếng Việt <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p style=" color: black">
+                            Tiếng Việt
+                        </p>
+                        <p style=" color: black">
+                            English
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <p style="color: rgb(117, 117, 117);margin-left: 39px">Netflix Việt Nam</p>
+        </div>
+    </div>
+</body>
+</html>

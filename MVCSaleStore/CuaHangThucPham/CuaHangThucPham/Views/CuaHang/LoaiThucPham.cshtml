@@ -1,0 +1,8 @@
+﻿@model IEnumerable<CuaHangThucPham.Models.LoaiThucPham>
+@foreach (var item in Model)
+{
+<a href="@Url.Action("PhanLoaiThucPham","CuaHang", new { id = item.MaLoaiThucPham })" class="list-group-item">
+    @item.TenLoai
+</a>
+        
+}

@@ -1,0 +1,104 @@
+﻿@using CuaHangThucPham.Models;
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "ThucPham";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+
+@model PagedList.PagedList<CuaHangThucPham.Models.ThucPham>
+
+@helper Truncate(string input, int Lenght)
+{
+    if (input.Length < Lenght)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, Lenght)<text>...</text>
+    }
+}
+
+<style>
+    img {
+        width: 79px;
+    }
+
+    body {
+        margin-left: 102px;
+    }
+</style>
+<h2>QUẢN LÝ THÔNG TIN THỰC PHẨM</h2>
+
+<p>
+    @Html.ActionLink("THÊM MỚI", "ThemMoiThucPham")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th style="width:200px"> Tên thực phẩm </th>
+        <th style="width:100px"> Giá bán </th>
+        <th style="width:300px"> Mô tả </th>
+        <th style="width:300px"> Ảnh bìa </th>
+        <th style="width:150px"> Ngày cập nhật </th>
+        <th style="width:120px"> SL.Tồn </th>
+        <th style="width:120px"> Tên loại </th>
+        
+        <th style="width:200px">  </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenThucPham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Truncate(item.MoTa, 100)
+            </td>
+            <td>
+                <img src="@Url.Content("~/Hinhsanpham/" + item.AnhBia)" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayCapNhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuongTon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiThucPham.TenLoai)
+            </td>
+            
+            <td>
+              
+                @Html.ActionLink("Chi tiết", "ChiTietThucPham", new { id = item.MaThucPham }) |
+                @Html.ActionLink("Xóa", "XoaThucPham", new { id = item.MaThucPham })
+            </td>
+        </tr>
+    }
+
+</table>
+@*Tạo liên kết các trang*@
+<div class="center-block">
+    Trang @(Model.PageCount<Model.PageNumber?0:Model.PageNumber)/@Model.PageCount
+    <div class="MenuTrang >
+
+        @Html.PagedListPager(Model, page => Url.Action("ThucPham", new { page = page }))
+    </div>
+</div>
+
+<style>
+    .MenuTrang li {
+        display: inline ;
+        
+    }
+    .pages {
+        color: #fff;
+        cursor: default;
+        background-color: #337ab7;
+        border-color: #337ab7;
+    }
+</style>

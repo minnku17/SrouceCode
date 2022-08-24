@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Netflix</title>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <style>
+        .vungTren a img{
+            width: 50px;
+        }
+        .khung {
+            background-color: rgba(0,0,0,.75);
+            display: block;
+            margin: 0 auto;
+            border: none;
+            width: 431px;
+            height: 700px;
+            padding: 60px 68px 40px;
+        }
+        .vungDN h1 {
+            margin-top: 0px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        .input-group {
+            background: #333;
+            width: 299px;
+            margin: 36px 0px;
+        }
+        .vungDN input{
+            border-radius: 5px;
+            height: 50px;
+            border: none;
+            background-color: #333;
+        }
+        .vungDN button {
+            width: 100%;
+            height: 50px;
+            margin-top: 13px;
+            background: #e50914;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .checkbox input[type=checkbox] {
+            margin-top: -16px;
+            margin-left: -20px;
+            color: #333;
+        }
+        .vungDN label {
+            color: #b3b3b3;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .right {
+            float: right;
+            margin-top: -31px;
+            color: #b3b3b3;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .t1 img{
+            width: 20px;
+        }
+        .t1{
+             display: inline
+         }
+        .checkbox, .radio {
+            position: relative;
+            display: block;
+            width: 85px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .t1 button {
+            background: none;
+            border: none;
+            color: #737373;
+            margin-top: 40px;
+        }
+        .t2 {
+            display: flex;
+            color: #737373;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+        .t2 a {
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            margin-left: 7px;
+        }
+        .t3 {
+            width: 317px;
+            font-size: 13px;
+            color: #8c8c8c;
+        }
+        .t3 button {
+            border: none;
+            background: none;
+            color: #0071eb;
+        }
+        .page {
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('Images/Br1.jpg');
+            background-size: 100%;
+            width: 100%;
+            height: 1082px;
+        }
+        .vungTren a img {
+            width: 166px;
+            margin-top: 27px;
+            margin-left: 51px;
+        }
+        .bottom ul {
+            list-style: none;
+        }
+
+        .bottom a {
+            color: rgb(117, 117, 117);
+        }
+
+        .btm_ul {
+            display: inline-block;
+            float: left;
+        }
+
+        .bottom {
+            margin-top: 54px;
+            height: 257px;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding-bottom: 12px;
+            padding: 14px 266px;
+        }
+
+        .btm_ul li {
+            margin: 10px 45px 10px 0px;
+            font-size: 13px;
+        }
+
+        .phanCuoi1 {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="vungTren">
+            <a href="Index.html"><img src="Images/logo.png" alt="Alternate Text" /></a> 
+        </div>
+        <div class="khung">
+            <div class="vungDN">
+                <h1>
+                    Đăng nhập
+                </h1>
+                <div class="input-group">
+                    <input style="border-radius: 5px" type="text" class="form-control nhap" placeholder="Email hoặc số điện thoại">
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-control nhap" placeholder="Mật khẩu">
+                </div>
+                <button type="button" class="btn btn-danger">Đăng nhập</button>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Ghi nhớ tôi</label>
+                </div>
+                <a class="right" href="#">Bạn cần trợ giúp?</a>
+            </div>
+            <div class="vungChu">
+                <div class="t1">
+                    <button type="submit">
+                        <img style="margin-left: -6px" src="ImagesDN/logofb.png" alt="Alternate Text" />
+                        <span style="padding-top: 2px; padding-left: 7px">Đăng nhập bằng tài khoản Facebook</span>
+                    </button>
+                    
+                   
+                </div>
+                <div class="t2">
+                    <p>Bạn mới tham gia Netflix?</p>
+                    <a href="HtmlPage.html">Đăng kí ngay.</a>
+                </div>
+                <div class="t3">
+                    <span>Trang này được Google reCAPTCHA bảo vệ để đảm bảo bạn không phải là robot. </span>
+                    <button><a href="#">Tìm hiểu thêm.</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="vungDuoi">
+            <div class="bottom" style="background-color: rgba(0,0,0,.75); ">
+                <ul>
+                    <li><a href="#" style="font-size: 1em">Bạn có câu hỏi? Liên hệ với chúng tôi.</a></li>
+                </ul>
+                <!--btm1-->
+                <ul class="btm_ul" id="1">
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Tùy chọn cookie</a></li>
+                </ul>
+
+                <!--btm2-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Thông tin doanh nghiệp</a></li>
+                </ul>
+                <!--btm3-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                </ul>
+                <!--btm4-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Quyền riêng tư</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                Tiếng Việt <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p>
+                                        Tiếng Việt
+                                    </p>
+                                    <p>
+                                        English
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="color: rgb(117, 117, 117)">Netflix Việt Nam</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

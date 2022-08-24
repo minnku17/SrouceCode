@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CuaHangThucPham.Models.ThucPham>
+@{
+    ViewBag.Title = "PhanLoaiThucPham";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h3 style="text-align:center;color:red">Phân Loại Thực Phẩm</h3>
+<div class="row">
+    @foreach (var thucpham in Model)
+    {
+        <div class="col-sm-4 clo-lg-4 col-md-4">
+            <div class="thumnail">
+                <a href="@Url.Action("Details","CuaHang", new { id = thucpham.MaLoaiThucPham })">
+                    <img alt="@thucpham.TenThucPham" style="width: 271px; height: 171px" src="~/Hinhsanpham/@thucpham.AnhBia"  />
+                    <div>
+                        <br />
+                        <h4 style="text-align:center">
+                            @thucpham.TenThucPham
+                        </h4>
+                        <p></p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    }
+</div>
+

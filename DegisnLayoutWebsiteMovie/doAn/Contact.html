@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        ul li {
+            list-style: none;
+        }
+        .navbar-default {
+            background-color: black;
+            border: none;
+            padding-left: 205px;
+            padding-right: 219px;
+            border-radius: inherit;
+            margin-bottom: 0px;
+        }
+
+        .thanhDau a img {
+            width: 106px;
+            margin-left: 30px;
+        }
+
+        .navbar-right {
+            padding: 11px 56px;
+        }
+
+        .dN {
+            height: 31px;
+            width: 156px;
+            border: 1px solid;
+            border-color: #888;
+            background-color: black;
+        }
+        .tG {
+            height: 31px;
+            border: none;
+            background-color: #e50914;
+            border-radius: 2px;
+            width: 109px;
+            margin-left: 9px;
+            margin-right: 9px;
+        }
+        .navbar-right a {
+            text-decoration: none;
+            color: white;
+        }
+        .chuT {
+            padding: 6px;
+            font-size: 13px;
+            color: white;
+        }
+        .noiDung {
+            background-color: #181818;
+            color: white;
+        }
+        .a {
+            font-size: 18px;
+            line-height: 32px;
+            white-space: nowrap;
+            color: white;
+            margin-top: 3px;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: white;
+        }
+        .vungG {
+            border: none;
+            width: 973px;
+            height: 936px;
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 25px;
+        }
+        .trai {
+            width: 778px;
+            min-height: 700px;
+            border: none;
+        }
+        .phai {
+            width: 351px;
+            min-height: 696px;
+            margin-left: 23px;
+            padding-top: 163px;
+            border: none;
+        }
+        .hihi {
+            display: flex;
+            margin-top: 26px;
+            color: #e50914;
+        }
+            .hihi a {
+                margin-left: 0px;
+                margin-top: 2px;
+                color: #e50914;
+                text-decoration: none;
+            }
+        .trai h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+        .trai h3 {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .trai p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+        .phai p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+        .huhu {
+            font-weight: 700;
+            color: #221f1f;
+        }
+        .kaka {
+            display: flex;
+            padding-left: 0px;
+        }
+        .mumu {
+            color: #e50914;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .mama {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 567px;
+            border: 0;
+            border-top: 3px solid #eee;
+        }
+        .nut {
+            height: 47px;
+            background-color: white;
+            border: 1px solid;
+            width: 198px;
+            margin-top: 16px;
+        }
+        .nut1 {
+            height: 47px;
+            background-color: white;
+            border: 1px solid;
+            width: 287px;
+            margin-top: 16px;
+        }
+        .phai ul li {
+            list-style: disc;
+        }
+        .phai ul li a {
+            color: #221f1f;
+            font-weight: 400;
+            font-size: 17px;
+        }
+        .phai ul {
+            padding-left: 19px;
+        }
+        .phai input {
+            height: 41px;
+            width: 210px;
+            border: none;
+            margin-left: 11px;
+        }
+        .duoi {
+            display: flex;
+            border: 1px solid;
+            border-radius: 4px;
+            width: 246px;
+        }
+        .duoi button{
+            border: none;
+            background-color: white;
+        }
+        .bottom {
+            width: 973px;
+            height: 226px;
+            display: flex;
+            padding-top: 40px;
+        }
+        .ket {
+            background: #221f1f;
+        }
+        .nutL {
+            background: #221f1f;
+            border: 1px solid;
+            border-color: #8b8a88;
+            color: #fff;
+            width: 203px;
+            font-weight: 700;
+            height: 48px;
+        }
+        .kiki {
+            display: flex;
+            padding-left: 142px;
+            padding-top: 0px;
+        }
+            .kiki a {
+                color: #b6b5b2;
+                font-weight: 400;
+                padding-right: 33px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="thanhDau">
+            <nav class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="Index.html"><img src="Images/logo.png" /></a></li>
+                    <li><h1 style=" color: white;margin-top: 5px">|</h1></li>
+                    <li class="a"><a href="#">Trung tâm trợ giúp</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="dN"><a href="dangNhap.html">THAM GIA NETFLIX</a></button></li>
+                    <li><button type="button" class="tG"><a href="Index.html">ĐĂNG NHẬP</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="vungG">
+            <div class="trai">
+                <div class="hihi">
+                    <a href="#">&larr;</a>
+                    <a href="#" style=" margin-left: 11px   ">Quay lại Trang chủ trợ giúp</a>
+                </div>
+                <h1>Liên hệ với Dịch vụ khách hàng</h1>
+                <h3>Gọi cho chúng tôi từ ứng dụng Netflix</h3>
+                <p>
+                    Liên hệ với Netflix giờ đây đã trở nên dễ dàng hơn bao giờ hết khi bạn liên hệ
+                    với chúng tôi qua ứng dụng Netflix trên điện thoại hoặc máy tính bảng iOS hay Android!
+                    Bạn được miễn phí khi gọi qua ứng dụng – tất cả những gì bạn cần là kết nối Internet hoặc mạng di động.
+                </p>
+                <p style=" font-weight: 700">Tải xuống ứng dụng Netfix:</p>
+                <ul class="kaka">
+                    <li><a href="#"><img style=" width: 146px" src="Images/logoCHP.png" /></a></li>
+                    <li><a href="#"><img style="padding-top: 8px" src="https://help.nflxext.com/helpcenter/a011cbc6f8050b1a0476814ed984c7e4.svg" alt="Alternate Text" /></a></li>
+                </ul>
+                <ul class="kaka">
+                    <li class="mama">Bạn có câu hỏi?</li>
+                    <li style="padding-top:3px"><a class="mumu" href="#">Tìm hiểu cách liên hệ với chúng tôi từ ứng dụng Netflix!</a></li>
+                </ul>
+                <hr />
+                <h3>Gọi cho chúng tôi từ bất kỳ điện thoại nào</h3>
+                <p style=" font-weight: 700">Điện thoại hiện không khả dụng.</p>
+                <p>Hãy gọi cho chúng tôi bằng ứng dụng Netflix vì chúng tôi không hỗ trợ qua điện thoại tại quốc gia của bạn.</p>
+                <button class="nut" type="button">GỌI CHO CHÚNG TÔI</button>
+                <hr />
+                <h3>Trò chuyện trực tuyến</h3>
+                <p>Bạn sẽ cần có kết nối mạng Internet hoặc kết nối di động.</p>
+                <button class="nut1" type="button">BẮT ĐẦU TRÒ CHUYỆN TRỰC TUYẾN</button>
+            </div>
+            <div class="phai">
+                <p style=" font-weight: 700">Câu hỏi phổ biến</p>
+                <ul>
+                    <li><a href="#">Làm thế nào để đặt lại mật khẩu?</a></li>
+                    <li style="margin-top: 13px"><a href="#">Làm thế nào để yêu cầu một bộ phim hoặc chương trình truyền hình?</a></li>
+                    <li style="margin-top: 13px"><a href="#">Làm thế nào để hủy tài khoản?</a></li>
+                    <li style="margin-top: 13px"><a href="#">Tại sao Netflix không hoạt động?</a></li>
+                    <li style="margin-top: 13px"><a href="#">Netflix là gì?</a></li>
+                </ul>
+                <p style="font-weight: 700;margin-top: 56px">Tìm câu trả lời khác</p>
+                <div class="duoi">
+                    <button type="button">
+                        <a href="#">
+                            <img src="https://help.nflxext.com/helpcenter/2597c66e2e6e352867e6b26ac4f7baa3.svg"alt="Alternate Text" />
+                        </a>
+                    </button>
+                    <input type="text" placeholder="Bạn cần trợ giúp vấn đề gì?" />
+                </div>
+            </div>
+        </div>
+        <div class="ket">
+            <div class="bottom" style="margin: 0 auto">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle nutL" type="button" data-toggle="dropdown">
+                        TIẾNG VIỆT
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ENGLISH</a></li>
+                        <li><a href="#">SUOMI</a></li>
+                        <li><a href="#">POLSKI</a></li>
+                    </ul>
+                </div>
+                <ul class="kiki">
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Quyền riêng tư</a></li>
+                    <li><a href="#">Tùy chọn cookie</a></li>
+                    <li><a href="#">Thông tin doanh nghiệp</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

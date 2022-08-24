@@ -1,0 +1,82 @@
+﻿@model CuaHangThucPham.Models.ThucPham
+
+@{
+    ViewBag.Title = "XoaThucPham";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+
+<h2>Xóa thực phẩm</h2>
+
+<h3>Chắc chắn xóa thực phẩm này?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên thực phẩm:
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenThucPham)
+        </dd>
+
+        <dt>
+            Giá bán:
+
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}", Model.GiaBan) VNĐ
+        </dd>
+
+        <dt>
+            Mô tả:
+        </dt>
+
+        <dd style="width: 600px; text-align: justify">
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            Ảnh bìa:
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/Hinhsanpham/" + Model.AnhBia)" width="165px" alt="Alternate Text" />
+        </dd>
+
+        <dt>
+            Ngày cập nhật:
+        </dt>
+
+        <dd>
+            @String.Format("{0:đ/MM/yyyy}", Model.NgayCapNhat)
+        </dd>
+
+        <dt>
+            Số lượng tồn:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongTon)
+        </dd>
+
+        <dt>
+            Loại thực phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiThucPham.TenLoai)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "ThucPham")
+        </div>
+    }
+</div>

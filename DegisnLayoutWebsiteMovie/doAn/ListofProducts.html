@@ -1,0 +1,1168 @@
+﻿<!DOCTYPE html>
+<html style="background: #181818;"> 
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <style>
+        .navbar-default {
+            background-color: black;
+            border: none;
+        }
+        .thanhDau a img {
+            width: 106px;
+            margin-left: 30px;
+        }
+        .navbar-right {
+            padding: 11px 56px;
+        }
+        .dN {
+            height: 31px;
+            width: 118px;
+            border: 1px solid;
+            border-color: #888;
+            background-color: black;    
+        }
+        .tG {
+            height: 31px;
+            border: none;
+            background-color: #e50914;
+            border-radius: 2px;
+            width: 151px;
+            margin-left: 9px;
+            margin-right: 9px;
+        }
+        .navbar-right a{
+            text-decoration: none;
+            color: white;
+        }
+        .chuT {
+            padding: 6px;
+            font-size: 13px;
+            color: white;
+        }
+        .noiDung {
+            background-color: #181818;
+            color: white;
+        }
+        .row1 {
+            display: block;
+            margin-top: 58px;
+            width: 648px;
+            padding: 22px 0px 4px 47px;
+        }
+        .row1 h1{
+            max-width: 598px;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+        .row1 h4{
+            font-size: 19px;
+            margin-top: 12px;
+        }
+        .chuMt {
+            margin: 24px 0px 20px 47px;
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 500;
+        }
+        .item ul li{
+            display: grid;
+        }
+        .well {
+            min-height: 20px;
+            padding: 19px;
+            padding-left: 46px;
+            margin-bottom: 20px;
+            background-color: #181818;
+            border: none;
+            border-radius: none;
+            -webkit-box-shadow: none; 
+            box-shadow: none;
+        }
+        .col-sm-3 {
+            display: grid;
+            color: #fff;
+            text-align: center;
+            margin-top: 2px;
+        }
+        .col-sm-3 a {
+            color: #fff;
+            display: block;
+            text-align: center;
+            margin-top: 2px;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 67px;
+            bottom: 97px;
+            width: 1%;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: none;
+            background-color: red;
+            opacity: .5;
+        }
+        .row13 {
+            margin: 0 auto;
+            width: 622px;
+            text-align: center;
+            margin-bottom: 59px;
+        }
+            .row13 h4 {
+                font-size: 21px;
+                margin-top: 25px;
+            }
+        row13 h1 {
+            font-weight: 700;
+            font-size: 35px;
+        }
+        .tG1 {
+            height: 43px;
+            border: none;
+            background-color: #e50914;
+            border-radius: 2px;
+            width: 235px;
+            margin-left: 9px;
+            margin-right: 9px;
+            font-size: 20px;
+        }
+        .row13 button a{
+            color: white;
+            text-decoration: none;
+        }
+        .bottom ul {
+            list-style: none;
+        }
+
+        .bottom a {
+            color: rgb(117, 117, 117);
+        }
+
+        .btm_ul {
+            display: inline-block;
+            float: left;
+           
+        }
+
+        .bottom {
+            margin-top: 54px;
+            height: 315px;
+            display: contents;
+            width: 100%;
+            background-color: #181818;
+            padding-bottom: 12px;
+            padding: 14px 266px;
+        }
+
+        .btm_ul li {
+            margin: 10px 45px 10px 0px;
+            font-size: 13px;
+        }
+        .ha {
+            position: absolute;
+            margin-top: 126px;
+            margin-left: 105px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="thanhDau">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="Index.html"><img src="Images/logo.png" /></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="chuT">
+                        <span>
+                            PHIM VÀ CHƯƠNG TRÌNH TRUYỀN HÌNH KHÔNG GIỚI HẠN
+                        </span>
+                    </li>
+                    <li><button type="button" class="tG"><a href="Index.html">THAM GIA NGAY</a></button></li>
+                    <li><button type="button" class="dN"><a href="dangNhap.html">ĐĂNG NHẬP</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="noiDung">
+            <div class="row1">
+                <h1>Tác phẩm của Netflix</h1>
+                <h4>
+                    Netflix là nơi quy tụ những chương trình nguyên bản xuất sắc
+                    mà bạn không thể tìm thấy ở nơi nào khác. Phim ảnh, chương trình truyền hình,
+                    chương trình đặc biệt và nhiều nội dung khác, tất cả
+                    đều được thiết kế riêng cho bạn.<a href="#" style="color: white; text-decoration: underline">Xem miễn phí ngay</a>
+                </h4>
+            </div>
+            <div class="row2">
+                <h4 class="left chuMt">Phổ biến trên Netflix</h4>
+                <div class="well">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="ProductDetail.html"><img src="Images/v1.jpg" /></a>
+                                        <a href="ProductDetail.html">Sweet Home: Thế giới ma quái</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/gh.jpg" />
+                                        </a>
+                                        <a href="#">Gambit Hậu</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/pv.jpg" />
+                                        </a>
+                                        <a href="#">Phi vụ triệu đô</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/kn.jpg" />
+                                        </a>
+                                        <a href="#">Khởi nghiệp</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bdk.jpg" />
+                                        </a>
+                                        <a href="#">Báo động khẩn, tình yêu hạ cánh</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tgk.jpg" />
+                                        </a>
+                                        <a href="#">Thế giới không lối thoát</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/b.jpg" />
+                                        </a>
+                                        <a href="#">Bridgerton</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bma.jpg" />
+                                        </a>
+                                        <a href="#">Bóng ma Anh Quốc</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/eop.jpg" />
+                                        </a>
+                                        <a href="#">Emily ở Paris</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/nts.jpg" />
+                                        </a>
+                                        <a href="#">Nghệ thuật săn quỷ và nấu mì</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ctd.jpg" />
+                                        </a>
+                                        <a href="#">Chúa tể địa ngục</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hq.jpg" />
+                                        </a>
+                                        <a href="#">Hoàng quyền</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row3">
+                <h4 class="left chuMt">Tham gia vào phi vụ</h4>
+                <div class="well">
+                    <div id="myCarousel3" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bma.jpg" />
+                                        </a>
+                                        <a href="#">Bóng ma Anh Quốc</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tsq.jpg" />
+                                        </a>
+                                        <a href="#">Thợ săn quái vật</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tmt.jpg" />
+                                        </a>
+                                        <a href="#">Trùm ma túy</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ttb.jpg" />
+                                        </a>
+                                        <a href="#">Tổng thống bất đắt dĩ</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/krb.jpg" />
+                                        </a>
+                                        <a href="#">Khu rừng bí mật</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/xt.jpg" />
+                                        </a>
+                                        <a href="#">Xạ thủ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ktp.jpg" />
+                                        </a>
+                                        <a href="#">Kẻ trừng phạt</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/lnkg.jpg" />
+                                        </a>
+                                        <a href="#">Lạc ngoài không gian</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ec.jpg" />
+                                        </a>
+                                        <a href="#">El Chapo</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/vd.jpg" />
+                                        </a>
+                                        <a href="#">Võ đường Cobra Kai</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hgc.jpg" />
+                                        </a>
+                                        <a href="#">Hãy gọi cho Saul</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/6u.jpg" />
+                                        </a>
+                                        <a href="#">6 Underground - Đại chiến thế giới ngầm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel3" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row4">
+                <h4 class="left chuMt">Cùng xem cho trẻ em lớn hơn</h4>
+                <div class="well">
+                    <div id="myCarousel4" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/atd.jpg" />
+                                        </a>
+                                        <a href="#">Anne tóc đỏ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">                                            
+                                            <img src="Images/bns.jpg" />
+                                        </a>
+                                        <a href="#">Biên niên sử Giáng Sinh</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ntd.jpg" />
+                                        </a>
+                                        <a href="#">Nhóc trùm: Đi làm lại</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ptx.jpg" />
+                                        </a>
+                                        <a href="#">Phù thủy xui xẻo</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bns2.jpg" />
+                                        </a>
+                                        <a href="#">Biên niên sử Giáng Sinh: Phần hai</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cla.jpg" />
+                                        </a>
+                                        <a href="#">Cùng làm anh hùng</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tgkl.jpg" />
+                                        </a>
+                                        <a href="#">Thế giới khủng long: Trại kỷ phấn trắng</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/lnkg.jpg" />
+                                        </a>
+                                        <a href="#">Lạc ngoài không gian</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/htc.jpg" />
+                                        </a>
+                                        <a href="#">Hành tinh của chúng ta</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ecs.jpg" />
+                                        </a>
+                                        <a href="#">Enola Holmes</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ttt.jpg" />
+                                        </a>
+                                        <a href="#">Tân truyền thuyết Hầu Vương</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/kcc.jpg" />
+                                        </a>
+                                        <a href="#">Klaus - Câu chuyện Giáng Sinh</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel4" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel4" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row5">
+                <h4 class="left chuMt">Chương trình truyền hình Âu – Mỹ</h4>
+                <div class="well">
+                    <div id="myCarousel5" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/b.jpg" />
+                                        </a>
+                                        <a href="#">Bridgerton</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/eop.jpg" />
+                                        </a>
+                                        <a href="#">Emily ở Paris</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ctd.jpg" />
+                                        </a>
+                                        <a href="#">Chúa tể địa ngục</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hq.jpg" /></a>
+                                        <a href="#">Hoàng quyền</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cbm.jpg" />
+                                        </a>
+                                        <a href="#">Cậu bé mất tích</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/gdg.jpg" />
+                                        </a>
+                                        <a href="#">Giáo dục giới tính</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hvu.jpg" />
+                                        </a>
+                                        <a href="#">Học viện Umbrella</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tsq.jpg" />
+                                        </a>
+                                        <a href="#">Thợ săn quái vật</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tmt.jpg" />
+                                        </a>
+                                        <a href="#">Trùm ma túy</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ttb.jpg" />
+                                        </a>
+                                        <a href="#">Tổng thống bất đắc dĩ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/xt.jpg" />
+                                        </a>
+                                        <a href="#">Xạ thủ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ut.jpg" />
+                                        </a>
+                                        <a href="#">Ưu tú</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel5" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel5" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row6">
+                <h4 class="left chuMt">Mới phát hành</h4>
+                <div class="well">
+                    <div id="myCarousel6" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/nts.jpg" />
+                                        </a>
+                                        <a href="#">Nghệ thuật săn quỷ và nấu mì</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/dtcs.jpg" />
+                                        </a>
+                                        <a href="#">Điên thì có sao</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tli.jpg" />
+                                        </a>
+                                        <a href="#">Tầng lớp Itaewon</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/vtxs.jpg" />
+                                        </a>
+                                        <a href="#">Vương triều xác sống</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tsqv.jpg" />
+                                        </a>
+                                        <a href="#">Thợ săn quái vật</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/lk.jpg" />
+                                        </a>
+                                        <a href="#">Lãng khách</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ctk.jpg" />
+                                        </a>
+                                        <a href="#">Cái tên khắc sâu trong tim người</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/krb.jpg" />
+                                        </a>
+                                        <a href="#">Khu rừng bí mật</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/eop.jpg" />
+                                        </a>
+                                        <a href="#">Emily ở Paris</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/nts.jpg" />
+                                        </a>
+                                        <a href="#">Nghệ thuật săn quỷ và nấu mì</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/gtx.jpg" />
+                                        </a>
+                                        <a href="#">Gửi thời thanh xuân ngây thơ tươi đẹp (bản Hàn)</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hq.jpg" />
+                                        </a>
+                                        <a href="#">Hoàng quyền</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel6" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel6" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row7">
+                <h4 class="left chuMt">Tham gia vào phi vụ</h4>
+                <div class="well">
+                    <div id="myCarousel7" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/m.jpg" />
+                                        </a>
+                                        <a href="#">Mosul</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ut.jpg" />
+                                        </a>
+                                        <a href="#">Ưu tú</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tgkm.jpg" />
+                                        </a>
+                                        <a href="#">Trại giam kiểu Mỹ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/trn.jpg" />
+                                        </a>
+                                        <a href="#">Tyler Rake: Nhiệm vụ giải cứu</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/nts.jpg" />
+                                        </a>
+                                        <a href="#">Nghệ thuật săn quỷ và nấu mì</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tgk.jpg" />
+                                        </a>
+                                        <a href="#">Thế giới không lối thoát</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ktp.jpg" />
+                                        </a>
+                                        <a href="#">Kẻ trừng phạt</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/6u.jpg" />
+                                        </a>
+                                        <a href="#">6 Underground - Đại chiến thế giới ngầm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hgc.jpg" />
+                                        </a>
+                                        <a href="#">Hãy gọi cho Saul</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/dl.jpg" />
+                                        </a>
+                                        <a href="#">Đêm lặng</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/o.jpg" />
+                                        </a>
+                                        <a href="#">Ozark</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cls.jpg" />
+                                        </a>
+                                        <a href="#">Công lý của Spenser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel7" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel7" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row8">
+                <h4 class="left chuMt">Phim và chương trình về thiếu niên</h4>
+                <div class="well">
+                    <div id="myCarousel8" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cbm.jpg" />
+                                        </a>
+                                        <a href="#">Cậu bé mất tích</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/gdg.jpg" />
+                                        </a>
+                                        <a href="#">Giáo dục giới tính</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cbt.jpg" />
+                                        </a>
+                                        <a href="#">Cảnh báo tình yêu</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/atd.jpg" />
+                                        </a>
+                                        <a href="#">Anne tóc đỏ</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ncpl.jpg" />
+                                        </a>
+                                        <a href="#">Những cuộc phiêu lưu rùng rợn của Sabrina</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/ut.jpg" />
+                                        </a>
+                                        <a href="#">Ưu tú</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/13.jpg" />
+                                        </a>
+                                        <a href="#">13 lý do tại sao</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tsbd.jpg" />
+                                        </a>
+                                        <a href="#">Thợ săn bóng đêm - Vũ khí sinh tử</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel8" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel8" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row9">
+                <h4 class="left chuMt">Phim truyền hình chính kịch đáng xem liên tục</h4>
+                <div class="well">
+                    <div id="myCarousel9" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/o.jpg" />
+                                        </a>
+                                        <a href="#">Ozark</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/vb.jpg" />
+                                        </a>
+                                        <a href="#">Ván bài chính trị</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/13.jpg" />
+                                        </a>
+                                        <a href="#">13 lý do tại sao</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/kdb.jpg" />
+                                        </a>
+                                        <a href="#">Kẻ đeo bám</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/dc.jpg" />
+                                        </a>
+                                        <a href="#">Đế chế</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/mtv.jpg" />
+                                        </a>
+                                        <a href="#">Marvel: Thiết Quyền</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tmtx.jpg" />
+                                        </a>
+                                        <a href="#">Trùm ma túy: Mexico</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hgc.jpg" />
+                                        </a>
+                                        <a href="#">Hãy gọi cho Saul</a>
+                                    </div>
+                                </div>
+                            <!--/item-->
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel9" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel9" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row10">
+                <h4 class="left chuMt">Xem vào một dịp cuối tuầnụ</h4>
+                <div class="well">
+                    <div id="myCarousel10" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/hvd.jpg" />
+                                        </a>
+                                        <a href="#">Học viện đỏ đen</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cdt.jpg" />
+                                        </a>
+                                        <a href="#">Cô gái đến từ hư vô</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/dvd.jpg" />
+                                        </a>
+                                        <a href="#">Dục vọng đen tối</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bb.jpg" />
+                                        </a>
+                                        <a href="#">Búp bê ký ức</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/scd.jpg" />
+                                        </a>
+                                        <a href="#">Sự cám dỗ nóng bỏng</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/vs.jpg" />
+                                        </a>
+                                        <a href="#">Vệ sĩ</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/htct.jpg" />
+                                        </a>
+                                        <a href="#">Hành trình chết tiệt</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/mjm.jpg" />
+                                        </a>
+                                        <a href="#">Michael Jordan: Mùa giải cuối cùng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel10" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel10" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row11">
+                <h4 class="left chuMt">Chương trình truyền hình Hàn Quốc</h4>
+                <div class="well">
+                    <div id="myCarousel11" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/qvb.jpg" />
+                                        </a>
+                                        <a href="#">Quân vương bất diệt</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cdm.jpg" />
+                                        </a>
+                                        <a href="#">Chị đẹp mua cơm ngon cho tôi</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/cmt.jpg" />
+                                        </a>
+                                        <a href="#">Chào mẹ, tạm biệt!</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/dt.jpg" />
+                                        </a>
+                                        <a href="#">Đời tư</a>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--/item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/kst.jpg" />
+                                        </a>
+                                        <a href="#">Ký sự thanh xuân</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/qna.jpg" />
+                                        </a>
+                                        <a href="#">Quý ngài Ánh dươngt</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/bc.jpg" />
+                                        </a>
+                                        <a href="#">Bước chạy tới trái tim</a>
+                                    </div>
+                                    <div class="col-sm-3 day">
+                                        <a href="#x">
+                                            <img src="Images/tyc.jpg" />
+                                        </a>
+                                        <a href="#">Tình yêu chốn đô thị</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel11" data-slide="prev">‹</a>
+
+                        <a class="right carousel-control" href="#myCarousel11" data-slide="next">›</a>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+            </div>
+            <div class="row13">
+                <div class="center-block">
+                    <h1>Còn rất nhiều nội dung đáng xem.</h1>
+                    <h4>
+                        Netflix có một thư viện phong phú gồm các phim truyện,
+                        phim tài liệu, chương trình truyền hình, anime, tác phẩm giành giải thưởng của Netflix và nhiều
+                        nội dung khác. Xem không giới hạn bất cứ lúc nào bạn muốn.
+                    </h4>
+                    <button type="button" class="tG1"><a href="#">THAM GIA NGAY</a></button>
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li style="margin-left: 67px"><a href="#" style="font-size: 1em">Bạn có câu hỏi? Liên hệ với chúng tôi.</a></li>
+                </ul>
+                <!--btm1-->
+                <ul class="btm_ul" id="1" style=" margin-left: 67px" >
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Quan hệ với nhà đầu tư</a></li>
+                    <li><a href="#">Quyền riêng tư</a></li>
+                    <li><a href="#">Kiểm tra tốc độ</a></li>
+                </ul>
+
+                <!--btm2-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">Tùy chọn cookie</a></li>
+                    <li><a href="#">Thông báo pháp lý</a></li>
+                </ul>
+                <!--btm3-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Tài khoản</a></li>
+                    <li><a href="#">Các cách xem</a></li>
+                    <li><a href="#">Thông tin doanh nghiệpư</a></li>
+                    <li><a href="#">Tác phẩm của Netflix</a></li>
+                </ul>
+                <!--btm4-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Trung tâm đa phương tiện</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Liên hệ với chúng tôi</a></li>
+                </ul>
+                        <div class="dropdown ha">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                Tiếng Việt <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p style=" color: black">
+                                        Tiếng Việt
+                                    </p>
+                                    <p style=" color: black">
+                                        English
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p style="color: rgb(117, 117, 117);margin-left: 39px">Netflix Việt Nam</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

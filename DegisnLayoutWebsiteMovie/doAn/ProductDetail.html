@@ -1,0 +1,789 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <style>
+        .thanhTren a img {
+            width: 106px;
+            margin-left: 30px;
+        }
+        .chuT {
+            padding: 6px;
+            font-size: 13px;
+            color: white;
+        }
+        .navbar-default {
+            background-color: black;
+            border: none;
+        }
+        .navbar-right {
+            padding: 11px 56px;
+        }
+        .dN {
+            height: 31px;
+            width: 118px;
+            border: 1px solid;
+            border-color: #888;
+            background-color: black;
+        }
+        .tG {
+            height: 31px;
+            border: none;
+            background-color: #e50914;
+            border-radius: 2px;
+            width: 151px;
+            margin-left: 9px;
+            margin-right: 9px;
+        }
+        .navbar-right a {
+            text-decoration: none;
+            color: white;
+        }
+        .logo {
+            width: 539px;
+        }
+        .br1 {
+            margin: 63px 0px 13px 42px;
+            width: 660px;
+        }
+        .gt {
+            padding: 70px;
+            padding-left: 154px;
+            width: 726px;
+            height: 200px;
+        }
+        .chuTieuDe {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            color: #fff;
+        }
+        .dayNgan {
+            color: rgb(163, 163, 163);
+            display: inline-flex;
+        }
+        ul {
+            list-style: none;
+        }
+        .khung18 {
+            margin-left: 8px;
+            margin-right: 8px;
+            border: 1px solid;
+            width: 40px;
+            text-align: center;
+        }
+        .dayPhai {
+            margin-right: 8px;
+        }
+        .day2ben {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        a{  
+            color: white;
+            text-decoration: none;
+        }
+        .gt p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+        }
+        .namTrai {
+            margin-left: -39px;
+        }
+        .dienV {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            
+        }
+        .xemNoiDung img {
+            width: 100px;
+            padding-top: 10px;
+        }
+        .xemNoiDung ul {
+            float: left;
+            display: inline-flex;
+        }
+        .xemNoiDung button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        .chu1 {
+            padding-top: 15px;
+            padding-left: 26px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .xemNoiDung {
+            background: rgb(50, 45, 45);
+            width: 1391px;
+            margin-left: 61px;
+            height: 48px;
+            margin-top: 50px;
+        }
+        .xemNgay {
+            border: 1px solid #777;
+            margin-top: 80px;
+            height: 123px;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+        }
+        .noiDung1 {
+            width: 445px;
+            margin: 0 auto
+        }
+            .noiDung1 p {
+                max-width: 500px;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                color: #a3a3a3;
+            }
+            .noiDung1 h3 {
+                font-size: 20px;
+                line-height: 27px;
+                font-weight: 500;
+                color: #fff;
+            }
+        .chu2 {
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 500;
+            color: #a3a3a3;
+        }
+        .row1 ul {
+            display: inline-flex;
+        }
+        .tap {
+            margin: 0 auto;
+            padding: 89px 79px 0px;
+        }
+        .tapN {
+            margin: 0 auto;
+            padding: 45px 79px 0px;
+        }
+        .day2 {
+            margin: 0 auto;
+            padding: 0px 79px 0px;
+        }
+        .chu3 {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #a3a3a3;
+            width: 50%;
+            margin: 5px 0 20px;
+        }
+        .chu4 {
+            display: flex;
+        }
+        .khuon {
+            width: 335px;
+            margin-right: 10px;
+        }
+        .hinhT1 {
+            width: 333px;
+        }
+        .soTap {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .phut {
+            padding-left: 237px;
+            float: right;
+            font-size: 16px;
+            font-weight: 400;
+            color: #a3a3a3;
+            line-height: 27px;
+        }
+        .tomTat {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #a3a3a3;
+        }
+        .t1 {
+            color: #a3a3a3;
+        }
+        .r1 {
+            display: inline-flex;
+            width: 100%;
+        }
+        .r2 {
+            display: inline-flex;
+            width: 100%;
+        }
+            .r1 li {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .r2 li {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        .timHieu h1 {
+            font-size: 30px;
+            line-height: 34px;
+            font-weight: 400;
+            color: #fff;
+        }
+        .d2 {
+            padding-left: 210px;
+            width: 549px;
+        }
+        .d4 {
+            margin-left: -38px;
+        }
+        .day3 {
+            padding-top: 21px;
+        }
+        .khuon1 {
+            height: 185px;
+            width: 327px;
+            display: inline-grid;
+            margin-top: 15px;
+            margin-right: 6px;
+        }
+        .n1 img {
+            width: 325px;
+        }
+        .tacPham h3 {
+            font-size: 30px;
+            line-height: 34px;
+            font-weight: 400;
+        }
+        .tap1 {
+            margin: 0 auto;
+            padding: 0px 0px 0px;
+        }
+        .tapM {
+            margin: 0 auto;
+            padding: 28px 79px 0px;
+        }
+        .tieuDe {
+            font-size: 30px;
+            line-height: 34px;
+            font-weight: 400;
+        }
+        .sapRa a{
+            color: white;
+        }
+        .boG{
+            text-decoration: none;
+        }
+        .moTa {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #a3a3a3;
+        }
+        .a1 {
+            width: 431px;
+        }
+        .a2 {
+            width: 431px;
+        }
+        .bottom ul {
+            list-style: none;
+        }
+
+        .bottom a {
+            color: rgb(117, 117, 117);
+        }
+
+        .btm_ul {
+            display: inline-block;
+            float: left;
+        }
+        .bottom {
+            margin-top: 54px;
+            height: 315px;
+            display: contents;
+            width: 100%;
+            background-color: #181818;
+            padding-bottom: 12px;
+            padding: 14px 266px;
+        }
+
+        .btm_ul li {
+            margin: 10px 45px 10px 0px;
+            font-size: 13px;
+        }
+
+        .ha {
+            position: absolute;
+            margin-top: 126px;
+            margin-left: 0px;
+        }
+        .tapH {
+            margin: 0 auto;
+            padding: 125px 79px 0px;
+        }
+    </style>
+</head>
+<body style="background: rgb(24,24,24); color: white">
+    <div>
+        <div class="thanhTren" style=" display: inline-block">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="HtmlPage.html"><img src="Images/logo.png" /></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="chuT">
+                        <span>
+                            PHIM VÀ CHƯƠNG TRÌNH TRUYỀN HÌNH KHÔNG GIỚI HẠN
+                        </span>
+                    </li>
+                    <li><button type="button" class="tG"><a href="Index.html">THAM GIA NGAY</a></button></li>
+                    <li><button type="button" class="dN"><a href="Sign.html">ĐĂNG NHẬP</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="gt">
+                            <img class="logo" src="Images/logoSH.png" />
+                            <h3 class="chuTieuDe">Sweet Home: Thế giới ma quái</h3>
+                            <div class="namTrai">
+                                <ul class="dayNgan">
+                                    <li class="dayPhai">2020</li>
+                                    <li>|</li>
+                                    <li class="khung18">18+ </li>
+                                    <li>|</li>
+                                    <li class="day2ben"> 1 Mùa </li>
+                                    <li>|</li>
+                                    <li class="day2ben"><a href="#" style="color: rgb(163, 163, 163)">Chương trình truyền hình giả tưởng</a></li>
+                                </ul>
+                            </div>
+                            <p>
+                                Khi con người biến thành quái vật man rợ gieo rắc kinh hoàng, một thiếu niên trăn
+                                trở và hàng xóm ở căn hộ của cậu phải chiến đấu để sinh tồn – và giữ lấy nhân tính.
+                            </p>
+                            <ul class="dienV" style="padding-left: 0px;display: block">
+                                <li>Diễn viên chính: Song Kang,Lee Jin Uk,Lee Si Young</li>
+                                <li>Tác giả: Lee Eung Bok,Hong So Ri,Jang Young Woo,Kim Hyeong Min,Park So Hyeon,Park So Jeong</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="br1" src="Images/brP3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xemNoiDung">
+            <ul>
+                <li>
+                    <img src="Images/logo.png" />
+                </li>
+                <li class="chu1">
+                    Xem mọi nội dung bạn muốn.
+                </li>
+            </ul>
+            <button type="button" class="tG"><a href="Index.html" style="color: white; text-decoration: none">THAM GIA NGAY</a></button>
+        </div>
+    </div>
+    <div class="xemNgay">
+        <div class="noiDung1">
+            <h3>Xem ngay mùa 1 trên Netflix</h3>
+            <p>Song Kang ("Cảnh báo tình yêu") đối diện hiểm nguy tứ phía trong phim giật gân về quái vật dựa trên bộ webtoon cùng tên.</p>
+        </div>
+
+    </div>
+    <div class="tap" style="margin: 0 auto">
+        <div class="row1">
+            <ul style="padding-left: 0px">
+                <li><h1>Tập</h1></li>
+                <li style="color: #a3a3a3" class="day2ben"><h1>|</h1></li>
+                <li class="chu2">Sweet Home: Thế giới ma quái</li>
+            </ul>
+            <p style="font-size: 16px">Mùa 1</p>
+            <p style=" font-size: 16px;line-height: 22px;font-weight: 600">Năm phát hành: 2020</p>
+            <p class="chu3">
+                Khi con người biến thành quái vật man rợ gieo rắc kinh hoàng, một thiếu niên trăn
+                trở và hàng xóm ở căn hộ của cậu phải chiến đấu để sinh tồn – và giữ lấy nhân tính.
+            </p>
+        </div>
+        <div>
+            <div class="row2" style="display: flex">
+                <div class="row2" style="display: flex">
+                    <div class="tap1">
+                        <div class="khuon">
+                            <img class="hinhT1" src="Images/tap1.jpg" />
+                            <div class="chu4">
+                                <p class="soTap">1. Tập 1</p>
+                                <p class="phut">50ph</p>
+                            </div>
+                            <p class="tomTat">
+                                Cha Hyun Su một mình chuyển đến khu chung cư Green Home xập xệ.
+                                Không lâu sau, cậu chứng kiến một cảnh tượng đáng ngại ở căn hộ hàng xóm.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tap2" style="margin: 0 auto">
+                        <div class="khuon">
+                            <img class="hinhT1" src="Images/tap2.jpg" />
+                            <div class="chu4">
+                                <p class="soTap">2. Tập 2</p>
+                                <p class="phut">57ph</p>
+                            </div>
+                            <p class="tomTat">
+                                Tình trạng khẩn cấp được tuyên bố, các cư dân trói Pyeon Sang Wook
+                                lại sau khi anh bị cắn. Hyun Su không thể bỏ mặc một gia đình hoạn nạn.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tap3">
+                        <div class="khuon">
+                            <img class="hinhT1" src="Images/tap3.jpg" />
+                            <div class="chu4">
+                                <p class="soTap">3. Tập 3</p>
+                                <p class="phut">46ph</p>
+                            </div>
+                            <p class="tomTat">
+                                Một cứu tinh bất ngờ bảo vệ lũ trẻ khỏi nguy hiểm khi Hyun Su, Yoon Ji Su, và
+                                Jung Jae Heon cố gắng đưa chúng đến nơi an toàn.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tap4">
+                        <div class="khuon">
+                            <img class="hinhT1" src="Images/tap4.jpg" />
+                            <div class="chu4">
+                                <p class="soTap">4. Tập 4</p>
+                                <p class="phut">47ph</p>
+                            </div>
+                            <p class="tomTat">
+                                Thông tin quan trọng về đám quái vật được công bố. Khi cư dân đang bất đồng về việc
+                                phải làm sao với Hyun Su, Lee Eun Hyeok đề nghị họ tổ chức một cuộc bỏ phiếu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="day2" style="margin: 0 auto">
+        <div class="row2" style="display: flex">
+            <div class="row2" style="display: flex">
+                <div class="tap5">
+                    <div class="khuon">
+                        <img class="hinhT1" src="Images/tap5.jpg" />
+                        <div class="chu4">
+                            <p class="soTap">5. Tập 5</p>
+                            <p class="phut">45ph</p>
+                        </div>
+                        <p class="tomTat">
+                            Được giao thực hiện những nhiệm vụ nguy hiểm, Hyun Su trở lại để cứu Han Du Sik.
+                            Sang Wook sẵn sàng làm tất cả để thực hiện kế hoạch.
+                        </p>
+                    </div>
+                </div>
+                <div class="tap6" style="margin: 0 auto">
+                    <div class="khuon">
+                        <img class="hinhT1" src="Images/tap6.jpg" />
+                        <div class="chu4">
+                            <p class="soTap">6. Tập 6</p>
+                            <p class="phut">54ph</p>
+                        </div>
+                        <p class="tomTat">
+                            Seon Yeong đối mặt với con quái vật lớn nhất trong cuộc đời cô. Rời khỏi tòa nhà,
+                            Seo Yi Kyung đến văn phòng của vị hôn phu để tìm kiếm câu trả lời.
+                        </p>
+                    </div>
+                </div>
+                <div class="tap3">
+                    <div class="khuon">
+                        <img class="hinhT1" src="Images/tap7.jpg" />
+                        <div class="chu4">
+                            <p class="soTap">7. Tập 7</p>
+                            <p class="phut">49ph</p>
+                        </div>
+                        <p class="tomTat">
+                            Hyun Su cứu những người khác khỏi một cuộc tấn công đầy hiểm nguy.
+                            Không còn nhu yếu phẩm, Eun Hyeok thông báo về kế hoạch mạo hiểm ra bên ngoài để lấy thêm
+                        </p>
+                    </div>
+                </div>
+                <div class="tap4">
+                    <div class="khuon">
+                        <img class="hinhT1" src="Images/tap8.jpg" />
+                        <div class="chu4">
+                            <p class="soTap">8. Tập 8</p>
+                            <p class="phut">53ph</p>
+                        </div>
+                        <p class="tomTat">
+                            Không có nhiều lựa chọn trong tình trạng hiện tại, Ji Su đồng ý chấp nhận rủi ro lớn.
+                            Yi Kyung trở lại khu dân cư Green Home đúng lúc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="day2" style="margin: 0 auto">
+        <div class="row2" style="display: flex">
+            <div class="tap3">
+                <div class="khuon">
+                    <img class="hinhT1" src="Images/tap9.jpg" />
+                    <div class="chu4">
+                        <p class="soTap">9. Tập 9</p>
+                        <p class="phut">55ph</p>
+                    </div>
+                    <p class="tomTat">
+                        Khi một nhóm người sống ngoài vòng pháp luật tiếp quản tòa nhà, 
+                        các cư dân mới biết con người còn có thể man rợ hơn quái vật gấp nhiều lần.
+                    </p>
+                </div>
+            </div>
+            <div class="tap4">
+                <div class="khuon">
+                    <img class="hinhT1" src="Images/tap10.jpg" />
+                    <div class="chu4">
+                        <p class="soTap">10. Tập 10</p>
+                        <p class="phut">53ph</p>
+                    </div>
+                    <p class="tomTat">
+                        Một tờ truyền đơn quân sự hứa hẹn về con đường tới nơi an toàn, nhưng cả nhóm không mấy tin tưởng.
+                        Hyun Su được thấy một mặt mới về tình trạng của mình.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tap">
+        <div class="timHieu">
+            <h1 class="tieuDe">Tìm hiểu thêm</h1>
+            <div class="r1">
+                <div class="d1" style="margin-left: -36px">
+                    <ul>
+                        <li class="t1">Xem ngoại tuyến</li>
+                        <li>Có thể tải xuống</li>
+                    </ul>
+                </div>
+                <div class="d2">
+                    <ul>
+                        <li class="t1">Thể loại</li>
+                        <li>Phim chính kịch Hàn Quốc chuyển thể từ webtoon,</li>
+                        <li>Chương trình truyền hình giả tưởng,</li>
+                        <li>Chương trình truyền hình Hàn Quốc,</li>
+                        <li>Phim truyền hình giật gân,</li>
+                        <li>Phim truyền hình chính kịch,</li>
+                        <li>Phim truyền hình kinh dị</li>
+                    </ul>
+                </div>
+                <div class="d3">
+                    <ul>
+                        <li class="t1" d>Chương trình này thuộc thể loại...</li>
+                        <li>Ghê rợn,Đen tối,Kịch tính</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tapM">
+        <div class="tacPham">
+            <h3 style=" margin-bottom: 0px"><a style="color: white" href="#">Tác phẩm khác của Netflix</a></h3>
+            <!--dãy 1-->
+            <div class="n1">
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp1.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp2.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp3.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp4.jpg" />
+                    </a>
+                </div>
+            </div>
+            <!--dãy 2-->
+            <div class="n1">
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp5.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp6.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp7.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp8.jpg" />
+                    </a>
+                </div>
+            </div>
+            <!--dãy 2-->
+            <div class="n1">
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp9.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp10.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp11.jpg" />
+                    </a>
+                </div>
+                <div class="khuon1">
+                    <a href="#">
+                        <img src="Images/tp12.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="sapRa">
+            <div class="tapN">
+                <h1 class="tieuDe">Sắp ra mắt</h1>
+                <div class="r1">
+                    <div class="a1" style="margin-left: -36px">
+                        <ul>
+                            <li><a href="#">Nghệ thuật tình báo</a></li>
+                            <li>
+                                <a class="moTa" style="text-decoration: none;color: #a3a3a3" href="#">
+                                    The spy game is a serious business,
+                                    and throughout history, the tools and technologies developed
+                                    for it have mattered as much as the spies themselves.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="a2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Wendell & Wild
+                                </a>
+                            </li>
+                            <li>
+                                <a class="moTa" href="#" style="text-decoration: none;color: #a3a3a3">
+                                    Bộ phim hoạt hình phiêu lưu kiểu tĩnh vật có sự tham gia của Keegan-Michael
+                                    Key và Jordan Peele trong vai hai anh em ác quỷ trốn khỏi Thế giới ngầm.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="a2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Điên vì em
+                                </a>
+                            </li>
+                            <li>
+                                <a class="moTa" href="#" style="text-decoration: none;color: #a3a3a3">
+                                    Sau khi tự đưa mình vào bệnh viện tâm thần nơi người phụ nữ anh phải lòng đang ở,
+                                    Adri nhận ra rời khỏi đó sẽ không dễ như anh tưởng!
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="a2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    In From the Cold
+                                </a>
+                            </li>
+                            <li>
+                                <a class="moTa" href="#" style="text-decoration: none;color: #a3a3a3">
+                                    Cuộc sống của một người mẹ bị đảo lộn khi cô phải lựa chọn giữa việc khiến gia đình gặp nguy 
+                                    hiểm và quay lại con đường cũ là đặc vụ công nghệ sinh học người Nga.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="tapH">
+                <ul style="padding-left: 0px">
+                    <li ><a href="#" style="font-size: 1em">Bạn có câu hỏi? Liên hệ với chúng tôi.</a></li>
+                </ul>
+                <!--btm1-->
+                <ul class="btm_ul" id="1" style="padding-left: 0px">
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Quan hệ với nhà đầu tư</a></li>
+                    <li><a href="#">Quyền riêng tư</a></li>
+                    <li><a href="#">Kiểm tra tốc độ</a></li>
+                </ul>
+
+                <!--btm2-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">Tùy chọn cookie</a></li>
+                    <li><a href="#">Thông báo pháp lý</a></li>
+                </ul>
+                <!--btm3-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="Sign.html">Tài khoản</a></li>
+                    <li><a href="#">Các cách xem</a></li>
+                    <li><a href="#">Thông tin doanh nghiệpư</a></li>
+                    <li><a href="ListofProducts.html">Tác phẩm của Netflix</a></li>
+                </ul>
+                <!--btm4-->
+                <ul class="btm_ul" id="2">
+                    <li><a href="#">Trung tâm đa phương tiện</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="Contact.html">Liên hệ với chúng tôi</a></li>
+                </ul>
+                <div class="dropdown ha">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        Tiếng Việt <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <p style=" color: black">
+                                Tiếng Việt
+                            </p>
+                            <p style=" color: black">
+                                English
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <p style="color: rgb(117, 117, 117);margin-left: 39px">Netflix Việt Nam</p>
+            </div>
+            
+        </div>
+    
+</body>
+</html>
