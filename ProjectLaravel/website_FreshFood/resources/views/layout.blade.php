@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cửa Hàng Thực Phẩm Tươi Tốt NÔNG TRẠI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap styles -->
+    <link href="{{asset('public/frontend/css/bootstrap.css')}}" rel="stylesheet"/>
+    <!-- Customize styles -->
+    <link href="{{asset('public/frontend/style.css')}}" rel="stylesheet"/>
+    <!-- font awesome styles -->
+	<link href="{{asset('public/frontend/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+		<!--[if IE 7]>
+			<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	<!-- Favicons -->
+    <link rel="shortcut icon" href="{{asset('public/frontend/ico/favicon.ico')}}">
+  </head>
+<body>
+<!-- 
+	Upper Header Section 
+-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="topNav">
+		<div class="container">
+			<div class="alignR">
+				<div class="pull-left socialNw">
+					<a href="#"><span class="icon-twitter"></span></a>
+					<a href="#"><span class="icon-facebook"></span></a>
+					<a href="#"><span class="icon-youtube"></span></a>
+					<a href="#"><span class="icon-tumblr"></span></a>
+				</div>
+				<a class="active" href="{{URL::to('/trangchu')}}"> <span class="icon-home"></span> Trang chủ</a> 
+				<a href="#"><span class="icon-user"></span> Tài khoản của tôi</a> 
+				<a href="register.html"><span class="icon-edit"></span> Đăng kí miễn phí </a> 
+				<a href="{{URL::to('/LienHe')}}"><span class="icon-envelope"></span> Liên lạc với chúng tôi</a>
+				<a href="{{URL::to('/Giohang')}}"><span class="icon-shopping-cart"></span> Giỏ hàng(3) - <span class="badge badge-warning"> 185.000₫</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+Lower Header Section 
+-->
+<div class="container">
+<div id="gototop"> </div>
+<header id="header">
+<div class="row">
+	<div class="span4">
+	<h1>
+	<a class="logo" href="{{URL::to('/trangchu')}}"><span></span> 
+		<img src="{{('public/frontend/img/logoShop.jpg')}}" alt="bootstrap sexy shop">
+	</a>
+	</h1>
+	</div>
+	<div class="span4">
+	<div class="offerNoteWrapper">
+	<h1 class="dotmark">
+	<i class="icon-cut"></i>
+			Khuyến mãi đến 50%, hàng ngàn sản phẩm có giá khuyến mãi cực sốc, giảm đến 50%.
+	</h1>
+	
+	</div>
+	</div>
+	<div class="span4 alignR">
+	<p><br> <strong> Hỗ trợ (24/7) :  0794 755 206 </strong><br><br></p>
+	<span class="btn btn-mini">[ 3 ] <span class="icon-shopping-cart"></span></span>
+	<span class="btn btn-warning btn-mini">$</span>
+	
+	</div>
+</div>
+</header>
+
+<!--
+Navigation Bar Section 
+-->
+<div class="navbar">
+	  <div class="navbar-inner">
+		<div class="container">
+		  <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </a>
+		  <div class="nav-collapse">
+			<ul class="nav">
+			  <li class="active"><a href="{{URL::to('/trangchu')}}">Trang chính	</a></li>
+			  <li class=""><a href="{{URL::to('/Cacsanpham')}}">Các mặt hàng</a></li>
+			  <li class=""><a href="{{URL::to('/Vechungtoi')}}">Giới thiệu</a></li>
+			  <li class=""><a href="{{URL::to('/LienHe')}}">Liên hệ</a></li>
+			 
+			</ul>
+			<form action="#" class="navbar-search pull-left">
+			  <input type="text" placeholder="Tìm kiếm" class="search-query span2">
+			</form>
+			<ul class="nav pull-right">
+			<li >
+				<a  href="{{URL::to('/admin/login')}}"><span class="icon-lock"></span> Đăng nhập </a>
+			</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+<!-- 
+Body Section 
+-->
+<div class="row">
+<div id="sidebar" class="span3">
+<div class="well well-small">
+	<ul class="nav nav-list">
+		<li><a href="{{URL::to('/Cacsanpham')}}"><span class="icon-chevron-right"></span>THỊT, CÁ</a></li>
+		<li><a href="{{URL::to('/Cacsanpham')}}"><span class="icon-chevron-right"></span>RAU, CỦ, TRÁI CÂY</a></li>
+		<li><a href="{{URL::to('/Cacsanpham')}}"><span class="icon-chevron-right"></span>ĐỒ UỐNG</a></li>
+		<li><a href="{{URL::to('/Cacsanpham')}}"><span class="icon-chevron-right"></span>SỮA</a></li>
+		<li><a href="{{URL::to('/Cacsanpham')}}"><span class="icon-chevron-right"></span>MÌ, CHÁO, PHỞ, BÚN</a></li>
+		
+		<li style="border:0"> &nbsp;</li>
+		<li> <a class="totalInCart" href="{{URL::to('/Giohang')}}"><strong>Tổng cộng  <span class="badge badge-warning pull-right" style="line-height:18px;">185.000₫</span></strong></a></li>
+	</ul>
+</div>
+
+			  <div class="well well-small alert alert-warning cntr">
+				  <h2>Giảm giá đến 50%!!!</h2>
+				  <p> 
+					 chỉ trước tết nguyên đán. <br><br><a class="defaultBtn" href="#">Bấm vào đây </a>
+				  </p>
+			  </div>
+			  <div class="well well-small" ><a href="#"><img src="{{('public/frontend/img/paypal.jpg')}}" alt="payment method paypal"></a></div>
+			
+			<a class="shopBtn btn-block" href="#">Thực phẩm mới sắp về <br><small>Xem chi tiết!</small></a>
+			<br>
+			<br>
+			<ul class="nav nav-list promowrapper">
+			<li>
+			  <div class="thumbnail">
+				<a class="zoomTool" href="{{URL::to('/ChitietSP')}}" title="add to cart"><span class="icon-search"></span> Xem Nhanh</a>
+				<img src="{{('public/frontend/img/San_Pham/thibachi.jpg')}}" >
+				<div class="caption">
+				  <h4><a class="defaultBtn" href="{{URL::to('/ChitietSP')}}">Xem </a> <span class="pull-right">109.000₫</span></h4>
+				</div>
+			  </div>
+			</li>
+			<li style="border:0"> &nbsp;</li>
+			<li>
+			  <div class="thumbnail">
+				<a class="zoomTool" href="{{URL::to('/ChitietSP')}}" title="add to cart"><span class="icon-search"></span> Xem Nhanh</a>
+				<img src="{{('public/frontend/img/San_Pham/BaRoiHeo.jpg')}}" alt="shopping cart template">
+				<div class="caption">
+				  <h4><a class="defaultBtn" href="{{URL::to('/ChitietSP')}}">Xem </a> <span class="pull-right">86.000₫</span></h4>
+				</div>
+			  </div>
+			</li>
+			<li style="border:0"> &nbsp;</li>
+			<li>
+			  <div class="thumbnail">
+				<a class="zoomTool" href="{{URL::to('/ChitietSP')}}" title="add to cart"><span class="icon-search"></span> Xem Nhanh</a>
+				<img src="{{('public/frontend/img/San_Pham/Sua1.jpg')}}" alt="bootstrap template">
+				<div class="caption">
+				  <h4><a class="defaultBtn" href="{{URL::to('/ChitietSP')}}">Xem </a> <span class="pull-right">30.000₫</span></h4>
+				</div>
+			  </div>
+			</li>
+		  </ul>
+
+	</div>
+	@Yield('content')
+</div>
+</div>
+</div>
+</div>
+<!-- 
+Clients 
+-->
+<section class="our_client">
+	<hr class="soften"/>
+	<h4 class="title cntr"><span class="text">THỰC PHẨM SẠCH CHỈ CÓ TẠI HÒA</span></h4>
+	<hr class="soften"/>
+	<div class="row" style="center">
+		<div class="span2">
+			<a href="#"><img alt="" src="{{('public/frontend/img/Logo/BHX.png')}}"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="{{('public/frontend/img/Logo/logotgddd2.jpg')}}"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="{{('public/frontend/img/Logo/ANKHAN.png')}}"></a>
+		</div>
+		<div class="span2">
+			<a href="#"><img alt="" src="{{('public/frontend/img/Logo/DMX.png')}}"></a>
+		</div>
+		
+	</div>
+</section>
+
+<!--
+Footer
+-->
+<footer class="footer">
+<div class="row-fluid">
+<div class="span2">
+<h5>Your Account</h5>
+<a href="#">YOUR ACCOUNT</a><br>
+<a href="#">PERSONAL INFORMATION</a><br>
+<a href="#">ADDRESSES</a><br>
+<a href="#">DISCOUNT</a><br>
+<a href="#">ORDER HISTORY</a><br>
+ </div>
+<div class="span2">
+<h5>Iinformation</h5>
+<a href="{{URL::to('/LienHe')}}">Liên Hệ</a><br>
+<a href="#">SITEMAP</a><br>
+<a href="#">LEGAL NOTICE</a><br>
+<a href="#">TERMS AND CONDITIONS</a><br>
+<a href="#">ABOUT US</a><br>
+ </div>
+<div class="span2">
+<h5>Our Offer</h5>
+<a href="#">NEW PRODUCTS</a> <br>
+<a href="#">TOP SELLERS</a><br>
+<a href="#">SPECIALS</a><br>
+<a href="#">MANUFACTURERS</a><br>
+<a href="#">SUPPLIERS</a> <br/>
+ </div>
+ <div class="span6">
+<h5>The standard chunk of Lorem</h5>
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+ those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et 
+ Malorum" by Cicero are also reproduced in their exact original form, 
+accompanied by English versions from the 1914 translation by H. Rackham.
+ </div>
+ </div>
+</footer>
+</div><!-- /container -->
+
+<div class="copyright">
+<div class="container">
+	<p class="pull-right">
+		<a href="#"><img src="{{('public/frontend/img/maestro.png')}}" alt="payment"></a>
+		<a href="#"><img src="{{('public/frontend/img/mc.png')}}" alt="payment"></a>
+		<a href="#"><img src="{{('public/frontend/img/pp.png')}}" alt="payment"></a>
+		<a href="#"><img src="{{('public/frontend/img/visa.png')}}" alt="payment"></a>
+		
+	</p>
+	<span>Copyright &copy; 2022<br> Ở đâu rẻ hơn không hoàn tiền :))</span>
+</div>
+</div>
+<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{asset('public/frontend/js/jquery.js')}}"></script>
+	<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.easing-1.3.min.js')}}"></script>
+    <script src="{{asset('public/frontendjs/jquery.scrollTo-1.4.3.1-min.js')}}"></script>
+    <script src="{{asset('public/frontend/js/shop.js')}}"></script>
+  </body>
+</html>
